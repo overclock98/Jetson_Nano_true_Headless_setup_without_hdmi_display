@@ -1,4 +1,4 @@
-# Jetson Nano headless fresh setup(WiFi, SSH and VNC) even without a HDMI Display
+# Jetson Nano headless fresh setup (WiFi, SSH and VNC) even without a HDMI Display
 
 
   1- Download image from [Jetson Download Center]
