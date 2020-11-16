@@ -1,7 +1,7 @@
 # Jetson Nano headless fresh setup(WiFi, SSH and VNC) even without a HDMI Display
 
 
-  - Download image from [Jetson Download Center]
+  1- Download image from [Jetson Download Center]
   
   [Jetson Download Center]: <https://developer.nvidia.com/embedded/downloads>
   
@@ -23,7 +23,7 @@
   
   - Allow 1 minute for the Jetson Nano to boot.
   
-  - On your other computer, use the serial terminal application to connect via host serial port to the Jetson Nano. I use putty (board rate: 115200)
+  2- On your other computer, use the serial terminal application to connect via host serial port to the Jetson Nano. I use putty (board rate: 115200)
   
   - Review and accept NVIDIA Jetson software EULA
   
@@ -37,7 +37,7 @@
   
   - Choose “do not configure network at this time” and proceed
   
-  - Login with username and password
+  3- Login with username and password
   
   - Insert wifi dongle in to usb port
   
@@ -63,7 +63,7 @@
   ```sh
   $ ifconfig wlan0
   ```
-  - Reboot and login via ssh on putty with above ip
+  4- Reboot and login via ssh on putty with above ip
   
   - Update with
   ```sh
@@ -73,7 +73,7 @@
   ```sh
   $ sudo apt-get install nano
   ```
-  - Enabling Desktop Sharing: [steps][df4]
+  5- Enabling Desktop Sharing: [steps][df4]
   
   [df4]: <https://www.hackster.io/news/getting-started-with-the-nvidia-jetson-nano-developer-kit-43aa7c298797>
   
@@ -114,7 +114,7 @@
   ```sh
   $ dconf write /org/gnome/settings-daemon/plugins/sharing/vino-server/enabled-connections "['UUID']"
   ```
-  -Enabling Automatic Login (otherwise cant start from ssh): [steps][df5]
+  6-Enabling Automatic Login (otherwise cant start from ssh): [steps][df5]
   
   [df5]: <https://vitux.com/how-to-enable-disable-automatic-login-in-ubuntu-18-04-lts/>
   
@@ -127,7 +127,7 @@
   AutomaticLoginEnable = true
   AutomaticLogin = nano
   ```
-  - Reboot and start Vino
+  7- Reboot and start Vino
   ```sh
   $ sudo reboot
   $ export DISPLAY=:0 && /usr/lib/vino/vino-server
@@ -138,7 +138,7 @@
   ```sh
   /usr/lib/vino/vino-server
   ```
-  - To fix low resolution issue modify xorg.conf file
+  8- To fix low resolution issue modify xorg.conf file
   ```sh
   $ sudo nano /etc/X11/xorg.conf
   ```
@@ -159,7 +159,7 @@
      EndSubSection
   EndSection
   ```
-  - Reboot Jetson Nano and login via VNC
+  9- Reboot Jetson Nano and login via VNC
   ```sh
   $ sudo reboot
   ```
