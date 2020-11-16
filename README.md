@@ -37,9 +37,9 @@
   
   - Choose “do not configure network at this time” and proceed
   
-  3- Login with username and password
+  - Login with username and password
   
-  - Insert wifi dongle in to usb port
+  3- Insert wifi dongle in to usb port
   
   - Setup WiFi: [steps][df3]
   
