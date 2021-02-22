@@ -65,6 +65,10 @@
   ```
   4- Reboot and login via ssh on putty with above ip
   
+  In my experience NOMACHINE is better than VNC. If you wand NOMACHINE checkout the [link][df11]
+  
+  [df11]: <https://www.nomachine.com/AR02R01074>
+  
   - Update with
   ```sh
   $ sudo apt update
